@@ -1,0 +1,63 @@
+---
+import { techStack } from "../../../data";
+const half = Math.ceil(techStack.length / 2);
+---
+
+<script>
+  import Splide from "@splidejs/splide";
+  import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+  import "@splidejs/splide/css/core";
+  new Splide("#slider1", {
+    type: "loop",
+    drag: "free",
+    focus: "center",
+    arrows: false,
+    autoWidth: true,
+    gap: "1rem",
+    wheel: true,
+    autoScroll: { speed: 0.5 },
+  }).mount({ AutoScroll });
+  new Splide("#slider2", {
+    type: "loop",
+    drag: "free",
+    focus: "center",
+    arrows: false,
+    autoWidth: true,
+    gap: "1rem",
+    wheel: true,
+    autoScroll: { speed: -0.5 },
+  }).mount({ AutoScroll });
+</script>
+
+<div>
+  <section class="splide" id="slider1" aria-label="Slider tech stack">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          techStack.slice(0, half).map((tech) => (
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src={tech.icon} alt={tech.name} class="h-8 w-8" />
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+  <section class="splide" id="slider2" aria-label="Slider tech stack">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          techStack.slice(half).map((tech) => (
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src={tech.icon} alt={tech.name} class="h-8 w-8" />
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</div>

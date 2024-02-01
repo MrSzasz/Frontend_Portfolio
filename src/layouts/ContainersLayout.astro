@@ -1,0 +1,27 @@
+---
+export interface Props {
+  isHero?: boolean;
+  isFirst?: boolean;
+}
+
+const { isHero, isFirst } = Astro.props;
+
+const classes = {
+  heroClasses:
+    "h-screen grid place-items-center text-white  sticky top-0 -z-10",
+  firstContainerClasses:
+    "h-screen grid place-items-center text-white px-[10%] z-10 pt-[10%] bg-[#020202] rounded-t-[7.5%] border-t border-white",
+  defaultClasses:
+    "h-screen grid place-items-center text-white px-[10%] bg-[#020202] z-10",
+};
+---
+
+<section
+  class={isHero
+    ? classes.heroClasses
+    : isFirst
+      ? classes.firstContainerClasses
+      : classes.defaultClasses}
+>
+  <slot />
+</section>

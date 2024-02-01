@@ -1,0 +1,19 @@
+---
+import AboutMe from "@/components/containers/AboutMe/AboutMe.astro";
+import Layout from "../layouts/Layout.astro";
+import Hero from "@/components/containers/Hero/Hero.astro";
+import Projects from "@/components/containers/Projects/Projects.astro";
+import Contact from "@/components/containers/Contact/Contact.astro";
+import Footer from "@/components/containers/Footer/Footer.astro";
+import "@/styles/globals.css";
+---
+
+<Layout>
+  <main>
+    <Hero />
+    <AboutMe />
+    <Projects />
+    <Contact />
+  </main>
+  <Footer />
+</Layout>
