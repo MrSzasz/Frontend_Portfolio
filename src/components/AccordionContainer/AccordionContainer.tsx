@@ -12,7 +12,9 @@ const AccordionContainer = () => {
     <Accordion type="single" collapsible>
       {projects.map((project, index) => (
         <AccordionItem value={`item-${index}`} key={index}>
-          <AccordionTrigger className="px-2">{project.name}</AccordionTrigger>
+          <AccordionTrigger className="px-2 cursor-none" data-interactive>
+            {project.name}
+          </AccordionTrigger>
           <AccordionContent>
             <AccordionCard
               name={project.name}

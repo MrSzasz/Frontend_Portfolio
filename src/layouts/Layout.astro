@@ -1,4 +1,9 @@
 ---
+import CustomCursor from "@/components/CustomCursor/CustomCursor.astro";
+import "@fontsource/dm-mono";
+
+import "@fontsource/kanit";
+
 import "../styles/globals.css";
 ---
 
@@ -36,7 +41,8 @@ import "../styles/globals.css";
     <meta name="generator" content={Astro.generator} />
     <title>TOMAS LUGO = PORTFOLIO</title>
   </head>
-  <body>
+  <body class="cursor-none">
     <slot />
+    <CustomCursor />
   </body>
 </html>

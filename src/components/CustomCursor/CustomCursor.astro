@@ -1,0 +1,50 @@
+<style>
+  .cursor-dot {
+    position: fixed;
+    top: -10;
+    left: -10;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 100;
+    pointer-events: none;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: white;
+  }
+</style>
+
+<div class="cursor-dot"></div>
+
+<script>
+  const animatedCursor = (e: MouseEvent, interacting: boolean) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    cursor.style.left = `${x}px`;
+    cursor.style.top = `${y}px`;
+
+    const keyframes = {
+      mixBlendMode: interacting ? "difference" : "normal",
+      transform: `scale(${interacting ? 2.5 : 1})`,
+    };
+
+    cursor.animate(keyframes, {
+      duration: 300,
+      fill: "forwards",
+    });
+  };
+
+  const cursor: HTMLElement = document.querySelector(".cursor-dot")!;
+  if (cursor !== null) {
+    document.addEventListener("mousemove", (e) => {
+      if (e.target !== null) {
+        const interactive = (e.target as HTMLElement).closest(
+          "[data-interactive]"
+        );
+        const interacting = interactive !== null;
+
+        animatedCursor(e, interacting);
+      }
+    });
+  }
+</script>

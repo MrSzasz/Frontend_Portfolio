@@ -25,7 +25,8 @@ const AccordionCard = ({
           href={url}
           target="_blank"
           rel="noreferrer"
-          className="row-end-1 hover:opacity-80 transition-all border border-transparent hover:border-white relative"
+          className="row-end-1 hover:opacity-80 transition-all border border-transparent hover:border-white relative cursor-none"
+          data-interactive
         >
           <div className="absolute inset-0 w-full h-full bg-black/50 opacity-0 hover:opacity-100  flex flex-col gap-0 items-center justify-center transition-all">
             <FiExternalLink className="text-white text-xl" />
@@ -51,7 +52,7 @@ const AccordionCard = ({
             <Badge
               key={i}
               variant="secondary"
-              className="cursor-default rounded text-xs px-3"
+              className="cursor-default rounded text-xs px-3 font-thin"
             >
               {tech}
             </Badge>
@@ -59,13 +60,16 @@ const AccordionCard = ({
         </div>
       </div>
       {repo ? (
-        <div className="row-start-1 row-end-2">
-          <Badge className="rounded text-xs p-0">
+        <div className="row-start-1 row-end-2 w-fit" data-interactive>
+          <Badge
+            className="rounded text-xs p-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground text-white px-3 py-1"
+            variant="default"
+          >
             <a
               href={repo}
               target="_blank"
               rel="noreferrer"
-              className="flex gap-2 items-center w-full py-1 px-2"
+              className="flex gap-2 items-center w-full py-1 px-2 cursor-none"
             >
               GitHub Repo
               <FiExternalLink />

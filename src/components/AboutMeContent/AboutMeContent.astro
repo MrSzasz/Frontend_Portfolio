@@ -6,7 +6,7 @@ import { DownloadIcon } from "@radix-ui/react-icons";
 
 <div class="grid grid-cols-2 p-4 h-full my-10">
   <div class="relative h-full">
-    <h3 class="text-4xl sticky top-10">ABOUT ME</h3>
+    <h3 class="text-7xl sticky top-10">ABOUT ME</h3>
   </div>
 
   <div class="flex flex-col gap-4">
@@ -25,17 +25,23 @@ import { DownloadIcon } from "@radix-ui/react-icons";
     </div> -->
     <p>
       <!-- TODO => Fix this -->
-      Hi! My name is Tomas. I'm a Full-stack Developer from Argentina. <br /> I finished
-      my studies being in the TOP 10 of the course, thanks to the fact that I love
-      programming and development, and that I was always inclined towards self-taught
-      education, seeking to learn something new every day.
+      Hello there! I'm Tomas, a passionate Full-stack Developer based in Argentina.
+      <br />
+      With a solid background in programming and development, I specialize in technologies
+      like Next.js, Express, MySQL, and more. My enthusiasm for continuous learning
+      and self-improvement drives me to explore new technologies and expand my skills
+      every day
     </p>
     <TechnologiesCarousel />
-    <Button className="font-bold w-fit rounded">
+    <Button
+      className="font-bold w-fit rounded cursor-none"
+      data-interactive
+      variant="outline"
+    >
       <a
         href="Resume_TomasLugo.pdf"
         download="Resume_TomasLugo.pdf"
-        class="flex gap-2"
+        class="flex gap-2 items-center cursor-none"
       >
         <DownloadIcon /> Download CV
       </a>

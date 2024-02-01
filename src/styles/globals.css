@@ -57,3 +57,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+html::selection {
+  background: white;
+  color: #020202;
+}
+
+body {
+  font-family: "DM Mono", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Kanit", sans-serif;
+}

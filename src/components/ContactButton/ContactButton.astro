@@ -27,9 +27,7 @@ const { text, copyText, href } = Astro.props;
 </script>
 
 <div class="flex gap-4 items-center pb-1 w-fit transition-all relative group">
-  <div
-    class="flex gap-4 items-center cursor-default pb-1 border-b border-b-transparent"
-  >
+  <div class="flex gap-4 items-center pb-1 border-b border-b-transparent">
     <slot />
     <span class="text-lg">
       {text}
@@ -41,12 +39,20 @@ const { text, copyText, href } = Astro.props;
     {
       copyText && (
         <Button asChild>
-          <LuCopy data-copy={copyText} className="cursor-pointer" />
+          <LuCopy data-copy={copyText} data-interactive />
         </Button>
       )
     }
     <Button client:load asChild>
-      <a href={href} target="_blank" rel="noopener noreferrer"> <LuSend /></a>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cursor-none"
+        data-interactive
+      >
+        <LuSend /></a
+      >
     </Button>
   </div>
   <Toaster position="bottom-right" client:load />
