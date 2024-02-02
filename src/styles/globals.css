@@ -58,6 +58,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 html::selection {
   background: white;
   color: #020202;
@@ -71,4 +74,18 @@ h1,
 h2,
 h3 {
   font-family: "Kanit", sans-serif;
+}
+
+.rotateText {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .rotateText {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    text-align: start;
+  }
 }

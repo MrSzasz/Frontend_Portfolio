@@ -19,22 +19,25 @@ const { text, copyText, href } = Astro.props;
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      // @ts-ignore
       navigator.clipboard.writeText(button.dataset.copy);
       toast("Successfully copied to clipboard");
     });
   });
 </script>
 
-<div class="flex gap-4 items-center pb-1 w-fit transition-all relative group">
-  <div class="flex gap-4 items-center pb-1 border-b border-b-transparent">
+<div
+  class="flex gap-2 md:gap-4 items-center pb-1 w-fit transition-all relative group"
+>
+  <div
+    class="flex gap-2 md:gap-4 items-center pb-1 border-b border-b-transparent"
+  >
     <slot />
-    <span class="text-lg">
+    <span class="text-xs md:text-lg">
       {text}
     </span>
   </div>
   <div
-    class="sticky left-[90%] opacity-0 group-hover:left-[110%] group-hover:opacity-100 flex gap-4 transition-all"
+    class="sticky md:left-[90%] md:opacity-0 md:group-hover:left-[110%] group-hover:opacity-100 flex gap-2 md:gap-4 transition-all"
   >
     {
       copyText && (

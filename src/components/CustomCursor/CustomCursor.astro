@@ -41,7 +41,12 @@
         const interactive = (e.target as HTMLElement).closest(
           "[data-interactive]"
         );
-        const interacting = interactive !== null;
+
+        const cursorInteractive = (e.target as HTMLElement).closest(
+          "[data-cursor]"
+        );
+
+        const interacting = interactive !== null || cursorInteractive !== null;
 
         animatedCursor(e, interacting);
       }

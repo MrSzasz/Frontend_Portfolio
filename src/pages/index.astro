@@ -5,15 +5,17 @@ import Hero from "@/components/containers/Hero/Hero.astro";
 import Projects from "@/components/containers/Projects/Projects.astro";
 import Contact from "@/components/containers/Contact/Contact.astro";
 import Footer from "@/components/containers/Footer/Footer.astro";
+import Navbar from "@/components/Navbar/Navbar.astro";
 import "@/styles/globals.css";
 ---
 
 <Layout>
-  <main>
+  <main class="relative">
     <Hero />
     <AboutMe />
     <Projects />
     <Contact />
+    <Navbar />
   </main>
   <Footer />
 </Layout>

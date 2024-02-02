@@ -4,12 +4,17 @@ import TechnologiesCarousel from "../TechnologiesCarousel/TechnologiesCarousel.a
 import { DownloadIcon } from "@radix-ui/react-icons";
 ---
 
-<div class="grid grid-cols-2 p-4 h-full my-10">
-  <div class="relative h-full">
-    <h3 class="text-7xl sticky top-10">ABOUT ME</h3>
+<div
+  class="grid grid-cols-[min-content_auto] md:grid-cols-2 gap-4 md:gap-0 p-4 h-fit md:h-full w-full my-10"
+  id="about"
+>
+  <div class="relative h-full col-end-2">
+    <h3 class="text-6xl md:text-7xl sticky top-10 rotateText md:normalText">
+      ABOUT ME
+    </h3>
   </div>
 
-  <div class="flex flex-col gap-4">
+  <div class="flex flex-col gap-4 col-end-3">
     <!-- <div class="flex gap-4 items-center">
       <img
         src="https://i.imgur.com/U6xhGpE.png"
@@ -23,7 +28,7 @@ import { DownloadIcon } from "@radix-ui/react-icons";
         self-taught education, seeking to learn something new every day.
       </p>
     </div> -->
-    <p>
+    <p class="text-balance">
       <!-- TODO => Fix this -->
       Hello there! I'm Tomas, a passionate Full-stack Developer based in Argentina.
       <br />

@@ -6,38 +6,41 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 ---
 
-<div class="grid grid-cols-2 p-4 h-full w-full my-10">
+<div
+  class="grid grid-cols-[min-content_auto] md:grid-cols-2 gap-4 md:gap-0 p-4 h-fit md:h-full w-full my-10"
+  id="contact"
+>
   <div class="relative h-full">
-    <h2 class="text-7xl sticky top-10">CONTACT</h2>
+    <h2 class="text-6xl md:text-7xl sticky top-10 rotateText">CONTACT</h2>
   </div>
   <div class="flex flex-col gap-4">
     <ContactButton
-      copyText="lugoleandro@hotmail.com"
-      text="lugoleandro@hotmail.com"
-      href="mailto:lugoleandro@hotmail.com"
+      copyText="tomasleandrolugo@gmail.com"
+      text="tomasleandrolugo@gmail.com"
+      href="mailto:tomasleandrolugo@gmail.com"
     >
-      <LuMail size="2rem" />
+      <LuMail className="text-xl md:text-3xl" />
     </ContactButton>
     <ContactButton
       text="LinkedIn"
       copyText="lugotomasleandro"
       href="https://www.linkedin.com/in/lugotomasleandro/"
     >
-      <FaLinkedin size="2rem" />
+      <FaLinkedin className="text-xl md:text-3xl" />
     </ContactButton>
     <ContactButton
       copyText="MrSzasz"
       text="GitHub"
       href="https://github.com/MrSzasz"
     >
-      <FaGithub size="2rem" />
+      <FaGithub className="text-xl md:text-3xl" />
     </ContactButton>
     <ContactButton
       text="WhatsApp"
       copyText="+5491163304554"
       href="https://wa.me/5491163304554"
     >
-      <FaWhatsapp size="2rem" />
+      <FaWhatsapp className="text-xl md:text-3xl" />
     </ContactButton>
   </div>
 </div>
