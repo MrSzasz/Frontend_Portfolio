@@ -6,7 +6,7 @@ export const readPdf = (pathToPdf: string) => {
   return new Promise((resolve) => {
     const pdfPath = path.resolve(pathToPdf);
     let dataBuffer = fs.readFileSync(pdfPath);
-    pdf(dataBuffer).then(function ({ text }) {
+    pdf(dataBuffer).then(function ({ text }: { text: string }) {
       resolve(text);
     });
   });

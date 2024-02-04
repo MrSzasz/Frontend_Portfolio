@@ -15,12 +15,15 @@ const { text, copyText, href } = Astro.props;
 <script>
   import toast from "react-hot-toast";
 
-  const buttons = document.querySelectorAll("[data-copy]");
+  const buttons: NodeListOf<HTMLElement> =
+    document.querySelectorAll("[data-copy]");
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      navigator.clipboard.writeText(button.dataset.copy);
-      toast("Successfully copied to clipboard");
+      if (button.dataset.copy !== undefined) {
+        navigator.clipboard.writeText(button.dataset.copy);
+        toast("Successfully copied to clipboard");
+      }
     });
   });
 </script>
