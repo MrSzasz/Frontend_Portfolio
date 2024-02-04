@@ -32,7 +32,7 @@ const { text, copyText, href } = Astro.props;
     class="flex gap-2 md:gap-4 items-center pb-1 border-b border-b-transparent"
   >
     <slot />
-    <span class="text-xs md:text-lg">
+    <span class="text-xs md:text-base">
       {text}
     </span>
   </div>
@@ -53,6 +53,7 @@ const { text, copyText, href } = Astro.props;
         rel="noopener noreferrer"
         class="cursor-none"
         data-interactive
+        aria-label={`Go to ${href}`}
       >
         <LuSend /></a
       >

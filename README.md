@@ -1,54 +1,83 @@
-# Astro Starter Kit: Basics
+# Portfolio Tomás Lugo
 
-```sh
-npm create astro@latest -- --template basics
+Welcome to my portfolio, where I present my knowledge in Node.js, HTML/CSS, JavaScript, and React. Take a look at my projects, which have been made with fresh and innovative components to create a unique user experience.
+
+[![Astro](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE)](https://astro.build/) [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/) [![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) [![Shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/) [![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)](https://www.cypress.io/)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [License](#license)
+
+## Introduction
+
+Crafted with Astro, my _Full-stack Portfolio_ invites you to explore a fusion of innovative technology and eye-catching design. Every project showcases my adaptability and effectiveness, from engaging front-end interfaces to robust back-end features. Come with me as we explore a world where innovation meets performance.
+
+## Features
+
+- Full-stack Expertise: Explore projects showing my proficiency in React, Node.js, and more.
+- Minimalist Design: Immerse yourself in elegantly simplistic designs.
+- Responsive: Prioritizing responsiveness to ensure seamless user interaction across devices.
+
+## Technologies Used
+
+- Astro
+- ReactJs
+- Shadcn/ui
+- Tailwind
+- Typescript
+
+- **Deployment:**
+  - Vercel
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/MrSzasz/Frontend_Portfolio.git
+cd frontend_portfolio
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Open the console on the root folder to start the server and the client.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Usage
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Open your browser and navigate to `http://localhost:4321` to access the app.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Tests
 
-## 🧞 Commands
+This app utilizes Cypress for end-to-end testing.
 
-All commands are run from the root of the project, from a terminal:
+### Prerequisites
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Before running the tests, make sure you have the following dependencies installed:
 
-## 👀 Want to learn more?
+- Node.js: [Download Node.js](https://nodejs.org/)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Installing Dependencies
+
+```bash
+# Install project dependencies
+npm install
+```
+
+### Running tests
+
+```bash
+# Run end-to-end tests with Cypress
+npm run cypress:open
+```
+
+## License
+
+This project is licensed under the MIT License.

@@ -25,7 +25,7 @@ const AccordionCard = ({
           href={url}
           target="_blank"
           rel="noreferrer"
-          className="md:row-end-1 hover:opacity-80 transition-all border border-transparent hover:border-white relative cursor-none"
+          className="md:row-end-1 hover:opacity-80 h-fit my-auto transition-all border border-transparent hover:border-white relative cursor-none"
           data-interactive
         >
           <div className="absolute inset-0 w-full h-full bg-black/50 opacity-0 hover:opacity-100  flex flex-col gap-0 items-center justify-center transition-all">
@@ -52,7 +52,7 @@ const AccordionCard = ({
             <Badge
               key={i}
               variant="secondary"
-              className="cursor-default rounded text-xs px-3 font-thin"
+              className="cursor-none rounded text-xs px-3 font-thin"
             >
               {tech}
             </Badge>
