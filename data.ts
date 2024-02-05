@@ -290,7 +290,7 @@ export const projects = [
       "Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills.",
     url: "https://mrszasz.github.io/inkua/",
     image: "jobs/job14.webp",
-    stack: ["NextJs", "ShadCn", "Express", "Node", "MySQL"],
+    stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
     repo: "https://github.com/MrSzasz/inkua",
     type: "work",
   },
