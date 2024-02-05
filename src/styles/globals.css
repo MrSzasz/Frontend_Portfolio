@@ -5,11 +5,11 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 1%;
+    --foreground: 0 0% 2%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 1%;
+    --card-foreground: 0 0% 2%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 1%;
+    --popover-foreground: 0 0% 2%;
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
@@ -27,11 +27,11 @@
   }
 
   .dark {
-    --background: 0 0% 1%;
+    --background: 0 0% 2%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 1%;
+    --card: 0 0% 2%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 1%;
+    --popover: 0 0% 2%;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
@@ -63,7 +63,7 @@ html {
 }
 html::selection {
   background: white;
-  color: #020202;
+  color: #050505;
 }
 
 body {

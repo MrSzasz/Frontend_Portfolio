@@ -2,27 +2,23 @@ import { Badge } from "@/components/ui/badge";
 import { FiExternalLink } from "react-icons/fi";
 
 interface AccordionCardProps {
-  src: string;
-  name: string;
-  url?: string;
-  description: string;
-  stack: string[];
-  repo?: string;
+  project: {
+    name: string;
+    description: string;
+    url?: string;
+    image: string;
+    stack: string[];
+    repo?: string;
+    type: string;
+  };
 }
 
-const AccordionCard = ({
-  src,
-  name,
-  url,
-  description,
-  stack,
-  repo,
-}: AccordionCardProps) => {
+const AccordionCard = ({ project }: AccordionCardProps) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 gap-4 px-2">
-      {url ? (
+      {project.url ? (
         <a
-          href={url}
+          href={project.url}
           target="_blank"
           rel="noreferrer"
           className="md:row-end-1 hover:opacity-80 h-fit my-auto transition-all border border-transparent hover:border-white relative cursor-none"
@@ -33,22 +29,22 @@ const AccordionCard = ({
             <p className="text-white text-xl">Visit</p>
           </div>
           <img
-            src={src}
-            alt={`${name} preview with link`}
+            src={project.image}
+            alt={`${project.name} preview with link`}
             className="aspect-video object-center object-cover"
           />
         </a>
       ) : (
         <img
-          src={src}
-          alt={`${name} preview with link`}
+          src={project.image}
+          alt={`${project.name} preview with link`}
           className="aspect-video object-center object-cover row-end-1"
         />
       )}
       <div className="flex flex-col gap-2 md:row-end-1">
-        <p className="h-full">{description}</p>
+        <p className="h-full">{project.description}</p>
         <div className="flex flex-wrap gap-2">
-          {stack.map((tech, i) => (
+          {project.stack.map((tech, i) => (
             <Badge
               key={i}
               variant="secondary"
@@ -59,14 +55,14 @@ const AccordionCard = ({
           ))}
         </div>
       </div>
-      {repo ? (
+      {project.repo ? (
         <div className="md:row-start-1 md:row-end-2 w-fit" data-interactive>
           <Badge
             className="rounded text-xs p-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground text-white px-3 py-1"
             variant="default"
           >
             <a
-              href={repo}
+              href={project.repo}
               target="_blank"
               rel="noreferrer"
               className="flex gap-2 items-center w-full py-1 px-2 cursor-none"
