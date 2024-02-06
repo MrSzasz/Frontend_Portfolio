@@ -154,69 +154,6 @@ export const techStack = [
 ];
 
 export const projects = [
-  // ***********************************
-  // ************************** PERSONAL
-  // ***********************************
-
-  {
-    name: "Portfolio",
-    description:
-      "Explore my portfolio showcasing HTML/CSS, JS, React, Node.js. Dive into projects with fresh design",
-    image: "jobs/job1.webp",
-    stack: ["Astro", "ShadCN", "Tailwind", "React", "Jest"],
-    repo: "https://github.com/MrSzasz/Frontend_Portfolio",
-    type: "personal",
-  },
-  {
-    name: "Job Vault",
-    description:
-      "Easily manage job applications and statuses while demonstrating front-end development skills",
-    url: "https://front-end-job-vault.vercel.app/",
-    image: "jobs/job2.webp",
-    stack: ["NextJs", "ShadCN", "Tailwind", "Typescript", "Cypress"],
-    repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
-    type: "personal",
-  },
-  {
-    name: "Minimal Notes",
-    description:
-      "A simple, distraction-free note-taking web app showcasing full-stack skills",
-    url: "https://minimal-notes-front.vercel.app/",
-    image: "jobs/job3.webp",
-    stack: ["NextJs", "ShadCN", "Express", "Node", "MySQL", "Vitest"],
-    repo: "https://github.com/MrSzasz/FullStack_Notes-app",
-    type: "personal",
-  },
-  {
-    name: "Moon Farm",
-    description:
-      "A fictional E-commerce inspired by Stardew Valley. Built with ReactJS and Firebase",
-    url: "https://moon-farm-coder.netlify.app/",
-    image: "jobs/job4.webp",
-    stack: ["React", "Bootstrap", "Sass", "Firebase"],
-    repo: "https://github.com/MrSzasz/Moon-Farm",
-    type: "personal",
-  },
-  {
-    name: "IDKHOW Band fan page",
-    description:
-      "Discover IDKHOW's history, news, discography, and tour dates—all in one place",
-    url: "https://mrszasz.github.io/IDKHOWBandLugo/index.html",
-    image: "jobs/job5.webp",
-    stack: ["HTML", "CSS", "Bootstrap", "Sass", "Github"],
-    repo: "https://github.com/MrSzasz/IDKHOWBandLugo",
-    type: "personal",
-  },
-  {
-    name: "Shax's Pouch",
-    description:
-      "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
-    url: "https://mrszasz.github.io/Night-Market/index.html",
-    image: "jobs/job6.webp",
-    stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
-    repo: "https://github.com/MrSzasz/Night-Market",
-    type: "personal",
-  },
 
   // ***********************************
   // ****************************** WORK
@@ -302,5 +239,60 @@ export const projects = [
     stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
     repo: "https://github.com/MrSzasz/Trend-Bond-React",
     type: "work",
+  },
+
+  // ***********************************
+  // ************************** PERSONAL
+  // ***********************************
+
+  {
+    name: "Job Vault",
+    description:
+      "Easily manage job applications and statuses while demonstrating front-end development skills",
+    url: "https://front-end-job-vault.vercel.app/",
+    image: "jobs/job2.webp",
+    stack: ["NextJs", "ShadCN", "Tailwind", "Typescript", "Cypress"],
+    repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
+    type: "personal",
+  },
+  {
+    name: "Minimal Notes",
+    description:
+      "A simple, distraction-free note-taking web app showcasing full-stack skills",
+    url: "https://minimal-notes-front.vercel.app/",
+    image: "jobs/job3.webp",
+    stack: ["NextJs", "ShadCN", "Express", "Node", "MySQL", "Vitest"],
+    repo: "https://github.com/MrSzasz/FullStack_Notes-app",
+    type: "personal",
+  },
+  {
+    name: "Moon Farm",
+    description:
+      "A fictional E-commerce inspired by Stardew Valley. Built with ReactJS and Firebase",
+    url: "https://moon-farm-coder.netlify.app/",
+    image: "jobs/job4.webp",
+    stack: ["React", "Bootstrap", "Sass", "Firebase"],
+    repo: "https://github.com/MrSzasz/Moon-Farm",
+    type: "personal",
+  },
+  {
+    name: "IDKHOW Band fan page",
+    description:
+      "Discover IDKHOW's history, news, discography, and tour dates—all in one place",
+    url: "https://mrszasz.github.io/IDKHOWBandLugo/index.html",
+    image: "jobs/job5.webp",
+    stack: ["HTML", "CSS", "Bootstrap", "Sass", "Github"],
+    repo: "https://github.com/MrSzasz/IDKHOWBandLugo",
+    type: "personal",
+  },
+  {
+    name: "Shax's Pouch",
+    description:
+      "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
+    url: "https://mrszasz.github.io/Night-Market/index.html",
+    image: "jobs/job6.webp",
+    stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
+    repo: "https://github.com/MrSzasz/Night-Market",
+    type: "personal",
   },
 ];
