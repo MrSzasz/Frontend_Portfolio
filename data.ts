@@ -154,7 +154,6 @@ export const techStack = [
 ];
 
 export const projects = [
-
   // ***********************************
   // ****************************** WORK
   // ***********************************
@@ -176,15 +175,15 @@ export const projects = [
     stack: ["NextJs", "Tailwind", "Google Analytics", "Photoshop"],
     type: "work",
   },
-  {
-    name: "RAC",
-    description:
-      "RAC is an advanced driving and motorsport pilot school. Touring and F1 cars",
-    url: "https://racingadvancedcourse.com.ar/",
-    image: "jobs/job9.webp",
-    stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
-    type: "work",
-  },
+  // {
+  //   name: "RAC",
+  //   description:
+  //     "RAC is an advanced driving and motorsport pilot school. Touring and F1 cars",
+  //   url: "https://racingadvancedcourse.com.ar/",
+  //   image: "jobs/job9.webp",
+  //   stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
+  //   type: "work",
+  // },
   {
     name: "RAC Landing",
     description:
@@ -203,15 +202,15 @@ export const projects = [
     stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
     type: "work",
   },
-  {
-    name: "Somos Salud",
-    description:
-      "A modern React-based website for a leading provider in healthcare plan management.",
-    url: "http://somos-salud.com.ar/#/",
-    image: "jobs/job12.webp",
-    stack: ["React", "Tailwind", "Redux", "Firebase", "Photoshop"],
-    type: "work",
-  },
+  // {
+  //   name: "Somos Salud",
+  //   description:
+  //     "A modern React-based website for a leading provider in healthcare plan management.",
+  //   url: "http://somos-salud.com.ar/#/",
+  //   image: "jobs/job12.webp",
+  //   stack: ["React", "Tailwind", "Redux", "Firebase", "Photoshop"],
+  //   type: "work",
+  // },
   {
     name: "Mercedes Llanos Art",
     description:
@@ -221,25 +220,25 @@ export const projects = [
     stack: ["NextJs", "Tailwind", "Firebase", "Figma"],
     type: "work",
   },
-  {
-    name: "InkuA",
-    description:
-      "Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills.",
-    url: "https://mrszasz.github.io/inkua/",
-    image: "jobs/job14.webp",
-    stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
-    repo: "https://github.com/MrSzasz/inkua",
-    type: "work",
-  },
-  {
-    name: "Trend Bond",
-    description: "E-Commerce developed with ReactJS and Firebase",
-    url: "https://trend-bond-react.netlify.app/",
-    image: "jobs/job15.webp",
-    stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
-    repo: "https://github.com/MrSzasz/Trend-Bond-React",
-    type: "work",
-  },
+  // {
+  //   name: "InkuA",
+  //   description:
+  //     "Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills.",
+  //   url: "https://mrszasz.github.io/inkua/",
+  //   image: "jobs/job14.webp",
+  //   stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
+  //   repo: "https://github.com/MrSzasz/inkua",
+  //   type: "work",
+  // },
+  // {
+  //   name: "Trend Bond",
+  //   description: "E-Commerce developed with ReactJS and Firebase",
+  //   url: "https://trend-bond-react.netlify.app/",
+  //   image: "jobs/job15.webp",
+  //   stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
+  //   repo: "https://github.com/MrSzasz/Trend-Bond-React",
+  //   type: "work",
+  // },
 
   // ***********************************
   // ************************** PERSONAL
@@ -285,14 +284,14 @@ export const projects = [
     repo: "https://github.com/MrSzasz/IDKHOWBandLugo",
     type: "personal",
   },
-  {
-    name: "Shax's Pouch",
-    description:
-      "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
-    url: "https://mrszasz.github.io/Night-Market/index.html",
-    image: "jobs/job6.webp",
-    stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
-    repo: "https://github.com/MrSzasz/Night-Market",
-    type: "personal",
-  },
+  // {
+  //   name: "Shax's Pouch",
+  //   description:
+  //     "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
+  //   url: "https://mrszasz.github.io/Night-Market/index.html",
+  //   image: "jobs/job6.webp",
+  //   stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
+  //   repo: "https://github.com/MrSzasz/Night-Market",
+  //   type: "personal",
+  // },
 ];
