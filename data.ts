@@ -1,4 +1,4 @@
-import type { Project } from "./types/types";
+import type { Project } from "./src/types/types";
 
 export const techStack = [
   {
