@@ -11,7 +11,7 @@ interface JobsDialogProps {
 const JobsDialog = ({ projects }: JobsDialogProps): React.ReactElement => {
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger asChild>
         <Button variant="outline" className="cursor-none" data-interactive>
           See all
         </Button>

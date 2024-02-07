@@ -48,7 +48,7 @@ describe("portfolio page test", () => {
     );
   });
 
-  it("should navigate trough the projects", () => {
+  it("should navigate trough the main projects", () => {
     cy.visit("/");
 
     // it should go to the projects section
@@ -60,29 +60,44 @@ describe("portfolio page test", () => {
 
     // it should open the first project
     cy.get("div[data-state='closed'][data-orientation='vertical']")
-      .contains(/portfolio/i)
-      .click()
-      .then(() => {
-        cy.get("p")
-          .contains(/dive into projects/i)
-          .should("be.visible");
-      });
+      .contains(/pagos/i)
+      .click();
+    cy.get("p")
+      .contains(/demo page/i)
+      .should("be.visible");
 
     cy.get("div[data-state='open'][data-orientation='vertical']")
-      .contains(/portfolio/i)
+      .contains(/pagos/i)
       .click();
 
     // it should open the second project
     cy.get("div[data-state='closed'][data-orientation='vertical']")
       .contains(/job vault/i)
-      .click()
-      .then(() => {
-        cy.get("p")
-          .contains(/Easily manage job applications and statuses/i)
-          .should("be.visible");
+      .click();
+    cy.get("p")
+      .contains(/Easily manage job applications and statuses/i)
+      .should("be.visible");
 
-        cy.get('a[data-interactive="true"]').should("be.visible");
-      });
+    cy.get('a[data-interactive="true"]').should("be.visible");
+  });
+
+  it("should navigate trough all the projects", () => {
+    cy.visit("/");
+
+    // it should go to the projects section
+    cy.get("nav > ul > li")
+      .contains(/projects/i)
+      .click();
+    cy.get("#projects").should("be.visible");
+    cy.get("nav > ul > li").contains(/hero/i);
+
+    // it should open the first project
+    cy.get("button")
+      .contains(/see all/i)
+      .click();
+    cy.get("p")
+      .contains(/demo page/i)
+      .should("be.visible");
   });
 
   it("should show the buttons for copy and send", () => {
