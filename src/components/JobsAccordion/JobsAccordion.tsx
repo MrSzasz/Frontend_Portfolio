@@ -6,20 +6,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
+import type { Project } from "@/types/types";
 
 interface JobsAccordionProps {
-  projects: [
-    {
-      name: string;
-      description: string;
-      url?: string;
-      image: string;
-      stack: string[];
-      repo?: string;
-      type: string;
-      main?: boolean;
-    }
-  ];
+  projects: Project[];
 }
 
 const JobsAccordion = ({ projects }: JobsAccordionProps) => {

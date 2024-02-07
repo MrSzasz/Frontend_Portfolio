@@ -2,20 +2,10 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
 import AccordionCard from "../AccordionCard/AccordionCard";
+import type { Project } from "@/types/types";
 
 interface JobsDialogProps {
-  projects: [
-    {
-      name: string;
-      description: string;
-      url?: string;
-      image: string;
-      stack: string[];
-      repo?: string;
-      type: string;
-      main?: boolean;
-    }
-  ];
+  projects: Project[];
 }
 
 const JobsDialog = ({ projects }: JobsDialogProps): React.ReactElement => {

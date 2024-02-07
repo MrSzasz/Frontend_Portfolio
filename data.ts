@@ -1,3 +1,5 @@
+import type { Project } from "./types/types";
+
 export const techStack = [
   {
     name: "HTML",
@@ -153,7 +155,7 @@ export const techStack = [
   },
 ];
 
-export const projects = [
+export const projects: Project[] = [
   // ***********************************
   // ****************************** WORK
   // ***********************************
