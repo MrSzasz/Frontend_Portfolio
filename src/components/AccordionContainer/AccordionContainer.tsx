@@ -7,9 +7,8 @@ import {
 import AccordionCard from "../AccordionCard/AccordionCard";
 import { projects } from "data";
 import { LuBriefcase, LuUser } from "react-icons/lu";
-import JobsDialog from "../JobsDialog/JobsDialog";
 
-const AccordionContainer = () => {
+const AccordionContainer = (): React.ReactElement => {
   return (
     <Accordion type="single" collapsible>
       {projects
@@ -43,7 +42,6 @@ const AccordionContainer = () => {
             <LuBriefcase className="opacity-50" /> <small>Work</small>
           </div>
         </div>
-        {/* <JobsDialog /> */}
       </div>
     </Accordion>
   );

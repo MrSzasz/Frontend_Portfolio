@@ -12,7 +12,9 @@ interface JobsAccordionProps {
   projects: Project[];
 }
 
-const JobsAccordion = ({ projects }: JobsAccordionProps) => {
+const JobsAccordion = ({
+  projects,
+}: JobsAccordionProps): React.ReactElement => {
   return (
     <Accordion type="single" collapsible>
       {projects

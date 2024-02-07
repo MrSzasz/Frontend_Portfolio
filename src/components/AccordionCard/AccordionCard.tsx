@@ -13,7 +13,7 @@ interface AccordionCardProps {
   };
 }
 
-const AccordionCard = ({ project }: AccordionCardProps) => {
+const AccordionCard = ({ project }: AccordionCardProps): React.ReactElement => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 gap-4 px-2">
       {project.url ? (
