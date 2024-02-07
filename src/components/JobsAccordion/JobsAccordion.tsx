@@ -1,15 +1,28 @@
+import { LuBriefcase, LuUser } from "react-icons/lu";
+import AccordionCard from "../AccordionCard/AccordionCard";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import AccordionCard from "../AccordionCard/AccordionCard";
-import { projects } from "data";
-import { LuBriefcase, LuUser } from "react-icons/lu";
-import JobsDialog from "../JobsDialog/JobsDialog";
+} from "../ui/accordion";
 
-const AccordionContainer = () => {
+interface JobsAccordionProps {
+  projects: [
+    {
+      name: string;
+      description: string;
+      url?: string;
+      image: string;
+      stack: string[];
+      repo?: string;
+      type: string;
+      main?: boolean;
+    }
+  ];
+}
+
+const JobsAccordion = ({ projects }: JobsAccordionProps) => {
   return (
     <Accordion type="single" collapsible>
       {projects
@@ -34,19 +47,8 @@ const AccordionContainer = () => {
             </AccordionContent>
           </AccordionItem>
         ))}
-      <div className="flex justify-between my-2">
-        <div className="flex md:gap-6 gap-4 pt-2 text-sm opacity-50">
-          <div className="flex gap-2 items-center">
-            <LuUser className="opacity-50" /> <small>Personal</small>
-          </div>
-          <div className="flex gap-2 items-center">
-            <LuBriefcase className="opacity-50" /> <small>Work</small>
-          </div>
-        </div>
-        {/* <JobsDialog /> */}
-      </div>
     </Accordion>
   );
 };
 
-export default AccordionContainer;
+export default JobsAccordion;

@@ -1,5 +1,9 @@
 ---
-import AccordionContainer from "../AccordionContainer/AccordionContainer";
+import { LuBriefcase, LuUser } from "react-icons/lu";
+import JobsAccordion from "../JobsAccordion/JobsAccordion";
+import { projects } from "data";
+import TestJobsDialog from "../TestJobsDialog/TestJobsDialog";
+import JobsDialog from "../JobsDialog/JobsDialog";
 ---
 
 <div
@@ -10,5 +14,21 @@ import AccordionContainer from "../AccordionContainer/AccordionContainer";
     <h3 class="text-6xl md:text-7xl sticky top-10 rotateText">PROJECTS</h3>
   </div>
 
-  <AccordionContainer client:load />
+  <div>
+    <JobsAccordion projects={projects} client:load />
+    <div class="flex justify-between my-2">
+      <div class="flex md:gap-6 gap-4 pt-2 text-sm opacity-50">
+        <div class="flex gap-2 items-center">
+          <LuUser className="opacity-50" />
+          <small>Personal</small>
+        </div>
+        <div class="flex gap-2 items-center">
+          <LuBriefcase className="opacity-50" />
+          <small>Work</small>
+        </div>
+      </div>
+      <!-- <TestJobsDialog projects={projects} client:load /> -->
+      <JobsDialog projects={projects} client:load />
+    </div>
+  </div>
 </div>

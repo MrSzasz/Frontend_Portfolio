@@ -165,6 +165,7 @@ export const projects = [
     image: "jobs/job7.webp",
     stack: ["NextJs", "Firebase", "Google Analytics", "Photoshop", "Figma"],
     type: "work",
+    main: true,
   },
   {
     name: "PedidosYa Burger",
@@ -174,16 +175,17 @@ export const projects = [
     image: "jobs/job8.webp",
     stack: ["NextJs", "Tailwind", "Google Analytics", "Photoshop"],
     type: "work",
+    main: true,
   },
-  // {
-  //   name: "RAC",
-  //   description:
-  //     "RAC is an advanced driving and motorsport pilot school. Touring and F1 cars",
-  //   url: "https://racingadvancedcourse.com.ar/",
-  //   image: "jobs/job9.webp",
-  //   stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
-  //   type: "work",
-  // },
+  {
+    name: "RAC",
+    description:
+      "RAC is an advanced driving and motorsport pilot school. Touring and F1 cars",
+    url: "https://racingadvancedcourse.com.ar/",
+    image: "jobs/job9.webp",
+    stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
+    type: "work",
+  },
   {
     name: "RAC Landing",
     description:
@@ -192,6 +194,7 @@ export const projects = [
     image: "jobs/job10.webp",
     stack: ["React", "Tailwind", "Photoshop"],
     type: "work",
+    main: true,
   },
   {
     name: "Foster Real State",
@@ -202,15 +205,15 @@ export const projects = [
     stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
     type: "work",
   },
-  // {
-  //   name: "Somos Salud",
-  //   description:
-  //     "A modern React-based website for a leading provider in healthcare plan management.",
-  //   url: "http://somos-salud.com.ar/#/",
-  //   image: "jobs/job12.webp",
-  //   stack: ["React", "Tailwind", "Redux", "Firebase", "Photoshop"],
-  //   type: "work",
-  // },
+  {
+    name: "Somos Salud",
+    description:
+      "A modern React-based website for a leading provider in healthcare plan management.",
+    url: "http://somos-salud.com.ar/#/",
+    image: "jobs/job12.webp",
+    stack: ["React", "Tailwind", "Redux", "Firebase", "Photoshop"],
+    type: "work",
+  },
   {
     name: "Mercedes Llanos Art",
     description:
@@ -219,26 +222,27 @@ export const projects = [
     image: "jobs/job13.webp",
     stack: ["NextJs", "Tailwind", "Firebase", "Figma"],
     type: "work",
+    main: true,
   },
-  // {
-  //   name: "InkuA",
-  //   description:
-  //     "Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills.",
-  //   url: "https://mrszasz.github.io/inkua/",
-  //   image: "jobs/job14.webp",
-  //   stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
-  //   repo: "https://github.com/MrSzasz/inkua",
-  //   type: "work",
-  // },
-  // {
-  //   name: "Trend Bond",
-  //   description: "E-Commerce developed with ReactJS and Firebase",
-  //   url: "https://trend-bond-react.netlify.app/",
-  //   image: "jobs/job15.webp",
-  //   stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
-  //   repo: "https://github.com/MrSzasz/Trend-Bond-React",
-  //   type: "work",
-  // },
+  {
+    name: "InkuA",
+    description:
+      "Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills.",
+    url: "https://mrszasz.github.io/inkua/",
+    image: "jobs/job14.webp",
+    stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
+    repo: "https://github.com/MrSzasz/inkua",
+    type: "work",
+  },
+  {
+    name: "Trend Bond",
+    description: "E-Commerce developed with ReactJS and Firebase",
+    url: "https://trend-bond-react.netlify.app/",
+    image: "jobs/job15.webp",
+    stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
+    repo: "https://github.com/MrSzasz/Trend-Bond-React",
+    type: "work",
+  },
 
   // ***********************************
   // ************************** PERSONAL
@@ -253,6 +257,7 @@ export const projects = [
     stack: ["NextJs", "ShadCN", "Tailwind", "Typescript", "Cypress"],
     repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
     type: "personal",
+    main: true,
   },
   {
     name: "Minimal Notes",
@@ -263,6 +268,7 @@ export const projects = [
     stack: ["NextJs", "ShadCN", "Express", "Node", "MySQL", "Vitest"],
     repo: "https://github.com/MrSzasz/FullStack_Notes-app",
     type: "personal",
+    main: true,
   },
   {
     name: "Moon Farm",
@@ -273,6 +279,7 @@ export const projects = [
     stack: ["React", "Bootstrap", "Sass", "Firebase"],
     repo: "https://github.com/MrSzasz/Moon-Farm",
     type: "personal",
+    main: true,
   },
   {
     name: "IDKHOW Band fan page",
@@ -283,15 +290,16 @@ export const projects = [
     stack: ["HTML", "CSS", "Bootstrap", "Sass", "Github"],
     repo: "https://github.com/MrSzasz/IDKHOWBandLugo",
     type: "personal",
+    main: true,
   },
-  // {
-  //   name: "Shax's Pouch",
-  //   description:
-  //     "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
-  //   url: "https://mrszasz.github.io/Night-Market/index.html",
-  //   image: "jobs/job6.webp",
-  //   stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
-  //   repo: "https://github.com/MrSzasz/Night-Market",
-  //   type: "personal",
-  // },
+  {
+    name: "Shax's Pouch",
+    description:
+      "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
+    url: "https://mrszasz.github.io/Night-Market/index.html",
+    image: "jobs/job6.webp",
+    stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
+    repo: "https://github.com/MrSzasz/Night-Market",
+    type: "personal",
+  },
 ];
