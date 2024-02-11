@@ -251,6 +251,17 @@ export const projects: Project[] = [
   // ***********************************
 
   {
+    name: "JSON to TS Converter",
+    description:
+      "JSON to TS Converter is an extension that converts JSON files to TypeScript interfaces",
+    url: "https://marketplace.visualstudio.com/items?itemName=TomasLeandroLugo.json-to-ts-converter",
+    image: "jobs/job16.webp",
+    stack: ["Typescript", "Markdown", "VSCode"],
+    repo: "https://github.com/MrSzasz/VSCode_JSON-to-TS-converter/",
+    type: "personal",
+    main: true,
+  },
+  {
     name: "Job Vault",
     description:
       "Easily manage job applications and statuses while demonstrating front-end development skills",
@@ -292,7 +303,6 @@ export const projects: Project[] = [
     stack: ["HTML", "CSS", "Bootstrap", "Sass", "Github"],
     repo: "https://github.com/MrSzasz/IDKHOWBandLugo",
     type: "personal",
-    main: true,
   },
   {
     name: "Shax's Pouch",
