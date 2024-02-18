@@ -251,9 +251,9 @@ export const projects: Project[] = [
   // ***********************************
 
   {
-    name: "Job Vault",
+    name: "NeatBG",
     description:
-      "Create stunning and unique website backgrounds from your images with NeatBg",
+      "Create stunning and unique website backgrounds from your images with NeatBG",
     url: "https://neat-bg.vercel.app/",
     image: "jobs/job17.webp",
     stack: ["Astro", "React", "Tailwind", "Typescript", "Cypress"],
