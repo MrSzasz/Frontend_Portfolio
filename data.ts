@@ -251,6 +251,17 @@ export const projects: Project[] = [
   // ***********************************
 
   {
+    name: "Job Vault",
+    description:
+      "Create stunning and unique website backgrounds from your images with NeatBg",
+    url: "https://neat-bg.vercel.app/",
+    image: "jobs/job17.webp",
+    stack: ["Astro", "React", "Tailwind", "Typescript", "Cypress"],
+    repo: "https://github.com/MrSzasz/FrontEnd_NeatBG",
+    type: "personal",
+    main: true,
+  },
+  {
     name: "JSON to TS Converter",
     description:
       "JSON to TS Converter is an extension that converts JSON files to TypeScript interfaces",
@@ -292,7 +303,6 @@ export const projects: Project[] = [
     stack: ["React", "Bootstrap", "Sass", "Firebase"],
     repo: "https://github.com/MrSzasz/Moon-Farm",
     type: "personal",
-    main: true,
   },
   {
     name: "IDKHOW Band fan page",
