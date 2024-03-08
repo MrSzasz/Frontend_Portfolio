@@ -73,6 +73,18 @@ h3 {
   }
 }
 
+@layer components {
+  .wh-hero {
+    @apply sticky;
+
+    @supports (hanging-punctuation: first) and (-webkit-appearance: none) {
+      .wh-hero {
+        position: relative;
+      }
+    }
+  }
+}
+
 .wk-h3 {
   width: 1em;
 }
