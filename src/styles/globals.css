@@ -74,17 +74,19 @@ h3 {
 }
 
 @layer components {
-  .wh-hero {
+  .wk-hero {
     @apply sticky;
+  }
 
-    @supports (hanging-punctuation: first) and (-webkit-appearance: none) {
-      .wh-hero {
-        position: relative;
-      }
-    }
+  _::-webkit-full-page-media,
+  _:future,
+  :root .wk-hero {
+    position: relative;
   }
 }
 
 .wk-h3 {
-  width: 1em;
+  @media (max-width: 768px) {
+    width: 1em;
+  }
 }
