@@ -168,6 +168,7 @@ export const projects: Project[] = [
     stack: ["NextJs", "Firebase", "Google Analytics", "Photoshop", "Figma"],
     type: "work",
     main: true,
+    hash: "LdHC2DEnbx$v05n$nzS5_Ls7s*Ng",
   },
   {
     name: "PedidosYa Burger",
@@ -178,6 +179,7 @@ export const projects: Project[] = [
     stack: ["NextJs", "Tailwind", "Google Analytics", "Photoshop"],
     type: "work",
     main: true,
+    hash: "LRQvC0-=%gH?7%M{M{x[4VR5oIo~",
   },
   {
     name: "RAC",
@@ -187,6 +189,7 @@ export const projects: Project[] = [
     image: "jobs/job9.webp",
     stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
     type: "work",
+    hash: "LB8:enD%%gD$$*R*xGWB|tWYs-j]",
   },
   {
     name: "RAC Landing",
@@ -197,6 +200,7 @@ export const projects: Project[] = [
     stack: ["React", "Tailwind", "Photoshop"],
     type: "work",
     main: true,
+    hash: "LjJ[I,_3_3-;4n%M%Mfk~qWBRjRj",
   },
   {
     name: "Foster Real State",
@@ -206,6 +210,7 @@ export const projects: Project[] = [
     image: "jobs/job11.webp",
     stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
     type: "work",
+    hash: "L7C?onR%4yoxB-M_avozGsxs~iRj",
   },
   {
     name: "Somos Salud",
@@ -215,6 +220,7 @@ export const projects: Project[] = [
     image: "jobs/job12.webp",
     stack: ["React", "Tailwind", "Redux", "Firebase", "Photoshop"],
     type: "work",
+    hash: "L8Q9[%4o009G_NNIRlM{?w9FNGxv",
   },
   {
     name: "Mercedes Llanos Art",
@@ -225,6 +231,7 @@ export const projects: Project[] = [
     stack: ["NextJs", "Tailwind", "Firebase", "Figma"],
     type: "work",
     main: true,
+    hash: "LVOgKNS1%Ns;~qjuRjfkNFn+WAR*",
   },
   {
     name: "InkuA",
@@ -235,6 +242,7 @@ export const projects: Project[] = [
     stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
     repo: "https://github.com/MrSzasz/inkua",
     type: "work",
+    hash: "LeMjgf?]^hEQ-hNzxtS6kXWBn%kC",
   },
   {
     name: "Trend Bond",
@@ -244,6 +252,7 @@ export const projects: Project[] = [
     stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
     repo: "https://github.com/MrSzasz/Trend-Bond-React",
     type: "work",
+    hash: "LQK^7$}+A0RO02NKxBS%9uT1xEs:",
   },
 
   // ***********************************
@@ -260,6 +269,7 @@ export const projects: Project[] = [
     repo: "https://github.com/MrSzasz/FrontEnd_NeatBG",
     type: "personal",
     main: true,
+    hash: "LD8rF~KS?1F|t1S]x]R%Epf1Wzw?",
   },
   {
     name: "JSON to TS Converter",
@@ -271,6 +281,7 @@ export const projects: Project[] = [
     repo: "https://github.com/MrSzasz/VSCode_JSON-to-TS-converter/",
     type: "personal",
     main: true,
+    hash: "L13[rQ?J9D4,-.%LR:IVw*xdotI+",
   },
   {
     name: "Job Vault",
@@ -282,6 +293,7 @@ export const projects: Project[] = [
     repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
     type: "personal",
     main: true,
+    hash: "L21f0%Res@WSxfRyojWSs[RyoQa]",
   },
   {
     name: "Minimal Notes",
@@ -293,6 +305,7 @@ export const projects: Project[] = [
     repo: "https://github.com/MrSzasz/FullStack_Notes-app",
     type: "personal",
     main: true,
+    hash: "L01VxsWjsrxm?sxJW7%4?JorxJs~",
   },
   {
     name: "Moon Farm",
@@ -303,6 +316,7 @@ export const projects: Project[] = [
     stack: ["React", "Bootstrap", "Sass", "Firebase"],
     repo: "https://github.com/MrSzasz/Moon-Farm",
     type: "personal",
+    hash: "LzDMaNxYV]nmi;t5WXS1M0bFV]WV",
   },
   {
     name: "IDKHOW Band fan page",
@@ -313,6 +327,7 @@ export const projects: Project[] = [
     stack: ["HTML", "CSS", "Bootstrap", "Sass", "Github"],
     repo: "https://github.com/MrSzasz/IDKHOWBandLugo",
     type: "personal",
+    hash: "LMEyPe4nRj?b00WBxuM{~Wxut7IU",
   },
   {
     name: "Shax's Pouch",
@@ -323,5 +338,6 @@ export const projects: Project[] = [
     stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
     repo: "https://github.com/MrSzasz/Night-Market",
     type: "personal",
+    hash: "LF9QmqofIURj~qofM{Rjt7j[j[of",
   },
 ];

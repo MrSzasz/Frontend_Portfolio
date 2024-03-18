@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { FiExternalLink } from "react-icons/fi";
+import AccordionCardImage from "../AccordionCardImage/AccordionCardImage";
 
 interface AccordionCardProps {
   project: {
@@ -10,6 +11,7 @@ interface AccordionCardProps {
     stack: string[];
     repo?: string;
     type: string;
+    hash: string;
   };
 }
 
@@ -28,17 +30,31 @@ const AccordionCard = ({ project }: AccordionCardProps): React.ReactElement => {
             <FiExternalLink className="text-white text-xl" />
             <p className="text-white text-xl">Visit</p>
           </div>
-          <img
+          {/* <img
             src={project.image}
+            loading="lazy"
             alt={`${project.name} preview with link`}
             className="aspect-video object-center object-cover"
+          /> */}
+          <AccordionCardImage
+            img={project.image}
+            name={project.name}
+            hashUrl={project.hash}
+            hasUrl="true"
           />
         </a>
       ) : (
-        <img
-          src={project.image}
-          alt={`${project.name} preview with link`}
-          className="aspect-video object-center object-cover row-end-1"
+        // <img
+        //   src={project.image}
+        //   loading="lazy"
+        //   alt={`${project.name} preview with link`}
+        //   className="aspect-video object-center object-cover row-end-1"
+        // />
+        <AccordionCardImage
+          img={project.image}
+          name={project.name}
+          hashUrl={project.hash}
+          hasUrl="false"
         />
       )}
       <div className="flex flex-col gap-2 md:row-end-1">

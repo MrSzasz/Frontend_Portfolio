@@ -7,4 +7,5 @@ export interface Project {
   repo?: string;
   type: string;
   main?: boolean;
+  hash: string;
 }
