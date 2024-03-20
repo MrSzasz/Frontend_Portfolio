@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div
+    class="flex flex-col justify-center items-center h-screen w-screen gap-4"
+  >
+    <div class="flex flex-col gap-4 justify-center items-center">
+      <img
+        src="/404/jim.gif"
+        alt="Jim from The Office looking at the screen"
+        class="w-4/5 md:w-1/2"
+      />
+      <span class="text-sm md:text-base text-center w-4/5 md:w-full"
+        >I think you're lost, or something went wrong, just sit back and relax</span
+      >
+    </div>
+    <a
+      href="/"
+      rel="noreferrer noopener nofollow"
+      class="text-lg md:text-2xl cursor-none hover:bg-white hover:text-dark md:hover:bg-transparent md:hover:text-white transition-all mt-2"
+      data-interactive="true">Go to the homepage</a
+    >
+  </div>
+</Layout>
