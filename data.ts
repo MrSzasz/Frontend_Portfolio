@@ -289,7 +289,7 @@ export const projects: Project[] = [
       "Easily manage job applications and statuses while demonstrating front-end development skills",
     url: "https://front-end-job-vault.vercel.app/",
     image: "jobs/job2.webp",
-    stack: ["NextJs", "ShadCN", "Tailwind", "Typescript", "Cypress"],
+    stack: ["NextJs", "ShadCN", "Typescript", "SQLite", "Drizzle"],
     repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
     type: "personal",
     main: true,
