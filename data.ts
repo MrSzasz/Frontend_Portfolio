@@ -14,16 +14,8 @@ export const techStack = [
     icon: "/svg/sass.svg",
   },
   {
-    name: "Styled Components",
-    icon: "/svg/styledComponents.svg",
-  },
-  {
     name: "JavaScript",
     icon: "/svg/javascript.svg",
-  },
-  {
-    name: "JQuery",
-    icon: "/svg/jquery.svg",
   },
   {
     name: "TypeScript",
@@ -54,16 +46,12 @@ export const techStack = [
     icon: "/svg/firebase.svg",
   },
   {
-    name: "Node",
+    name: "NodeJs",
     icon: "/svg/nodejs.svg",
   },
   {
     name: "Express",
     icon: "/svg/express.svg",
-  },
-  {
-    name: "SQL",
-    icon: "/svg/sql.svg",
   },
   {
     name: "MySQL",
@@ -74,24 +62,8 @@ export const techStack = [
     icon: "/svg/mongodb.svg",
   },
   {
-    name: "Mongoose",
-    icon: "/svg/mongoose.svg",
-  },
-  {
-    name: "JWT",
-    icon: "/svg/jwt.svg",
-  },
-  {
-    name: "Auth0",
-    icon: "/svg/auth0.svg",
-  },
-  {
     name: "Cypress",
     icon: "/svg/cypress.svg",
-  },
-  {
-    name: "Vitest",
-    icon: "/svg/vitest.svg",
   },
   {
     name: "Markdown",
@@ -102,14 +74,6 @@ export const techStack = [
     icon: "/svg/eslint.svg",
   },
   {
-    name: "NPM",
-    icon: "/svg/npm.svg",
-  },
-  {
-    name: "PNPM",
-    icon: "/svg/pnpm.svg",
-  },
-  {
     name: "Git",
     icon: "/svg/git.svg",
   },
@@ -118,40 +82,12 @@ export const techStack = [
     icon: "/svg/github.svg",
   },
   {
-    name: "Vercel",
-    icon: "/svg/vercel.svg",
-  },
-  {
-    name: "Netlify",
-    icon: "/svg/netlify.svg",
-  },
-  {
-    name: "Postman",
-    icon: "/svg/postman.svg",
-  },
-  {
-    name: "Bruno",
-    icon: "/svg/bruno.svg",
-  },
-  {
     name: "Figma",
     icon: "/svg/figma.svg",
   },
   {
-    name: "Adobe Illustrator",
-    icon: "/svg/adobeIllustrator.svg",
-  },
-  {
     name: "Adobe Photoshop",
     icon: "/svg/adobePhotoshop.svg",
-  },
-  {
-    name: "Affinity Designer",
-    icon: "/svg/affinityDesigner.svg",
-  },
-  {
-    name: "Canva",
-    icon: "/svg/canva.svg",
   },
 ];
 

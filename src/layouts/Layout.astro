@@ -36,6 +36,7 @@ import "../styles/globals.css";
   <head>
     <meta charset="UTF-8" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href="https://lugo-tomas-portfolio.vercel.app" />
     <meta
       name="description"
       content="Welcome to my portfolio—a showcase of my skills in Front-end and Back-end. Dive into my projects with a fresh design as you journey through my experiences"
@@ -99,6 +100,36 @@ import "../styles/globals.css";
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/jobs/job1.webp" />
     <meta name="generator" content={Astro.generator} />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Tomas Lugo Portfolio",
+        "url": "https://lugo-tomas-portfolio.vercel.app/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "person": {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Tomas Leandro Lugo",
+          "url": "https://lugo-tomas-portfolio.vercel.app/",
+          "image": "https://i.imgur.com/feiSumk.png",
+          "jobTitle": "Full Stack Developer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/lugotomasleandro/",
+            "https://github.com/MrSzasz"
+            "https://lugo-tomas-portfolio.vercel.app/"
+          ]
+        }
+      }
+    </script>
     <title>TOMAS LUGO = PORTFOLIO</title>
   </head>
   <body class="cursor-none">
