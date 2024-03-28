@@ -196,18 +196,6 @@ export const projects: Project[] = [
   // ***********************************
 
   {
-    name: "NeatBG",
-    description:
-      "Create stunning and unique website backgrounds from your images with NeatBG",
-    url: "https://neat-bg.vercel.app/",
-    image: "jobs/job17.webp",
-    stack: ["Astro", "React", "Tailwind", "Typescript", "Cypress"],
-    repo: "https://github.com/MrSzasz/FrontEnd_NeatBG",
-    type: "personal",
-    main: true,
-    hash: "LD8rF~KS?1F|t1S]x]R%Epf1Wzw?",
-  },
-  {
     name: "JSON to TS Converter",
     description:
       "JSON to TS Converter is an extension that converts JSON files to TypeScript interfaces",
@@ -230,6 +218,18 @@ export const projects: Project[] = [
     type: "personal",
     main: true,
     hash: "L21f0%Res@WSxfRyojWSs[RyoQa]",
+  },
+  {
+    name: "NeatBG",
+    description:
+      "Create stunning and unique website backgrounds from your images with NeatBG",
+    url: "https://neat-bg.vercel.app/",
+    image: "jobs/job17.webp",
+    stack: ["Astro", "React", "Tailwind", "Typescript", "Cypress"],
+    repo: "https://github.com/MrSzasz/FrontEnd_NeatBG",
+    type: "personal",
+    main: true,
+    hash: "LD8rF~KS?1F|t1S]x]R%Epf1Wzw?",
   },
   {
     name: "Minimal Notes",

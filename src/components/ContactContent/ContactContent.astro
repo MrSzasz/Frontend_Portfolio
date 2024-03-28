@@ -1,8 +1,9 @@
 ---
 import ContactButton from "../ContactButton/ContactButton.astro";
 import { LuMail } from "react-icons/lu";
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 ---
 
@@ -22,6 +23,13 @@ import { FaGithub } from "react-icons/fa";
       <LuMail className="text-xl md:text-3xl" />
     </ContactButton>
     <ContactButton
+      copyText="MrSzasz"
+      text="GitHub"
+      href="https://github.com/MrSzasz"
+    >
+      <FaGithub className="text-xl md:text-3xl" />
+    </ContactButton>
+    <ContactButton
       text="LinkedIn"
       copyText="lugotomasleandro"
       href="https://www.linkedin.com/in/lugotomasleandro/"
@@ -29,11 +37,18 @@ import { FaGithub } from "react-icons/fa";
       <FaLinkedin className="text-xl md:text-3xl" />
     </ContactButton>
     <ContactButton
-      copyText="MrSzasz"
-      text="GitHub"
-      href="https://github.com/MrSzasz"
+      text="Instagram"
+      copyText="tomaslugodev"
+      href="https://www.instagram.com/tomaslugodev/"
     >
-      <FaGithub className="text-xl md:text-3xl" />
+      <FaInstagram className="text-xl md:text-3xl" />
+    </ContactButton>
+    <ContactButton
+      text="X (Twitter)"
+      copyText="tomaslugodev"
+      href="https://x.com/tomaslugodev"
+    >
+      <FaXTwitter className="text-xl md:text-3xl" />
     </ContactButton>
     <ContactButton
       text="WhatsApp"
