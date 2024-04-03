@@ -12,6 +12,9 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        'noise': "url('/bg/noise.svg')",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -60,7 +63,8 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        dark: "#050505"
+        dark: "#070707",
+        white: "#FAFAFA"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -81,6 +85,10 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        "main-text": ["DM Mono", "sans-serif"],
+        "main-title": ["Kanit", "sans-serif"],
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
