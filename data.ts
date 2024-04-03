@@ -139,26 +139,6 @@ export const projects: Project[] = [
     hash: "LjJ[I,_3_3-;4n%M%Mfk~qWBRjRj",
   },
   {
-    name: "Foster Real State",
-    description:
-      "Christian Foster: Your property expert, from sales to rentals",
-    url: "https://www.christianfoster.com.ar/",
-    image: "jobs/job11.webp",
-    stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
-    type: "work",
-    hash: "L7C?onR%4yoxB-M_avozGsxs~iRj",
-  },
-  {
-    name: "Somos Salud",
-    description:
-      "A modern React-based website for a leading provider in healthcare plan management.",
-    url: "http://somos-salud.com.ar/#/",
-    image: "jobs/job12.webp",
-    stack: ["React", "Tailwind", "Redux", "Firebase", "Photoshop"],
-    type: "work",
-    hash: "L8Q9[%4o009G_NNIRlM{?w9FNGxv",
-  },
-  {
     name: "Mercedes Llanos Art",
     description:
       "Explore Mercedes Llanos's captivating, thought-provoking, and inspiring art",
@@ -169,27 +149,47 @@ export const projects: Project[] = [
     main: true,
     hash: "LVOgKNS1%Ns;~qjuRjfkNFn+WAR*",
   },
+  // {
+  //   name: "Somos Salud",
+  //   description:
+  //     "A modern React-based website for a leading provider in healthcare plan management.",
+  //   url: "http://somos-salud.com.ar/#/",
+  //   image: "jobs/job12.webp",
+  //   stack: ["React", "Tailwind", "Redux", "Firebase", "Photoshop"],
+  //   type: "work",
+  //   hash: "L8Q9[%4o009G_NNIRlM{?w9FNGxv",
+  // },
   {
-    name: "InkuA",
+    name: "Foster Real State",
     description:
-      "Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills.",
-    url: "https://mrszasz.github.io/inkua/",
-    image: "jobs/job14.webp",
-    stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
-    repo: "https://github.com/MrSzasz/inkua",
+      "Christian Foster: Your property expert, from sales to rentals",
+    url: "https://www.christianfoster.com.ar/",
+    image: "jobs/job11.webp",
+    stack: ["NextJs", "Tailwind", "Firebase", "Photoshop"],
     type: "work",
-    hash: "LeMjgf?]^hEQ-hNzxtS6kXWBn%kC",
+    hash: "L7C?onR%4yoxB-M_avozGsxs~iRj",
   },
-  {
-    name: "Trend Bond",
-    description: "E-Commerce developed with ReactJS and Firebase",
-    url: "https://trend-bond-react.netlify.app/",
-    image: "jobs/job15.webp",
-    stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
-    repo: "https://github.com/MrSzasz/Trend-Bond-React",
-    type: "work",
-    hash: "LQK^7$}+A0RO02NKxBS%9uT1xEs:",
-  },
+  // {
+  //   name: "InkuA",
+  //   description:
+  //     "Inkua is a non-profit organization that creates learning and innovation opportunities to develop skills.",
+  //   url: "https://mrszasz.github.io/inkua/",
+  //   image: "jobs/job14.webp",
+  //   stack: ["HTML", "Sass", "Javascript", "Figma", "Photoshop"],
+  //   repo: "https://github.com/MrSzasz/inkua",
+  //   type: "work",
+  //   hash: "LeMjgf?]^hEQ-hNzxtS6kXWBn%kC",
+  // },
+  // {
+  //   name: "Trend Bond",
+  //   description: "E-Commerce developed with ReactJS and Firebase",
+  //   url: "https://trend-bond-react.netlify.app/",
+  //   image: "jobs/job15.webp",
+  //   stack: ["React", "Tailwind", "Redux", "Firebase", "Figma"],
+  //   repo: "https://github.com/MrSzasz/Trend-Bond-React",
+  //   type: "work",
+  //   hash: "LQK^7$}+A0RO02NKxBS%9uT1xEs:",
+  // },
 
   // ***********************************
   // ************************** PERSONAL
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     name: "Job Vault",
     description:
       "Easily manage job applications and statuses while demonstrating front-end development skills",
-    url: "https://front-end-job-vault.vercel.app/",
+    url: "https://job-vault.vercel.app/",
     image: "jobs/job2.webp",
     stack: ["NextJs", "ShadCN", "Typescript", "SQLite", "Drizzle"],
     repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
@@ -230,18 +230,6 @@ export const projects: Project[] = [
     type: "personal",
     main: true,
     hash: "LD8rF~KS?1F|t1S]x]R%Epf1Wzw?",
-  },
-  {
-    name: "Minimal Notes",
-    description:
-      "A simple, distraction-free note-taking web app showcasing full-stack skills",
-    url: "https://minimal-notes-front.vercel.app/",
-    image: "jobs/job3.webp",
-    stack: ["NextJs", "ShadCN", "Express", "Node", "MySQL", "Vitest"],
-    repo: "https://github.com/MrSzasz/FullStack_Notes-app",
-    type: "personal",
-    main: true,
-    hash: "L01VxsWjsrxm?sxJW7%4?JorxJs~",
   },
   {
     name: "Moon Farm",
@@ -266,14 +254,26 @@ export const projects: Project[] = [
     hash: "LMEyPe4nRj?b00WBxuM{~Wxut7IU",
   },
   {
-    name: "Shax's Pouch",
+    name: "Minimal Notes",
     description:
-      "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
-    url: "https://mrszasz.github.io/Night-Market/index.html",
-    image: "jobs/job6.webp",
-    stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
-    repo: "https://github.com/MrSzasz/Night-Market",
+      "A simple, distraction-free note-taking web app showcasing full-stack skills",
+    url: "https://minimal-notes-front.vercel.app/",
+    image: "jobs/job3.webp",
+    stack: ["NextJs", "ShadCN", "Express", "Node", "MySQL", "Vitest"],
+    repo: "https://github.com/MrSzasz/FullStack_Notes-app",
     type: "personal",
-    hash: "LF9QmqofIURj~qofM{Rjt7j[j[of",
+    main: true,
+    hash: "L01VxsWjsrxm?sxJW7%4?JorxJs~",
   },
+  // {
+  //   name: "Shax's Pouch",
+  //   description:
+  //     "Introducing Shax's Pouch: a dark E-commerce with unique JavaScript-based design",
+  //   url: "https://mrszasz.github.io/Night-Market/index.html",
+  //   image: "jobs/job6.webp",
+  //   stack: ["HTML", "CSS", "Javascript", "Sass", "Bootstrap"],
+  //   repo: "https://github.com/MrSzasz/Night-Market",
+  //   type: "personal",
+  //   hash: "LF9QmqofIURj~qofM{Rjt7j[j[of",
+  // },
 ];
