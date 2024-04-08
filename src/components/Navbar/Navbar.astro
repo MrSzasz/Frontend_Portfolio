@@ -7,7 +7,10 @@
     <li
       class="w-max hover:bg-white hover:text-dark md:hover:bg-transparent md:hover:text-white transition-all"
       data-interactive=""
-      onclick="window.scrollTo(0, 0);"
+      onclick="window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });"
     >
       hero
     </li>

@@ -31,6 +31,34 @@ import "../styles/globals.css";
   }
 </script>
 
+<script>
+  import Lenis from "@studio-freight/lenis";
+
+  const lenis = new Lenis({
+    lerp: 0.07,
+    wheelMultiplier: 1,
+  });
+
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
+  document.querySelectorAll('a[href^="#"]').forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault()
+    const id = el.getAttribute('href')?.slice(1)
+    if (!id) return
+    const target = document.getElementById(id)
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' })
+    }
+  })
+})
+</script>
+
 <html lang="en">
   <!-- TODO => Try the I18n addon for spanish language -->
   <head>
