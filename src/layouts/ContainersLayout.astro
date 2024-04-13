@@ -8,11 +8,11 @@ const { isHero, isFirst } = Astro.props;
 
 const classes = {
   heroClasses:
-    "h-100vh h-[100svh] grid place-items-center text-white bg-[url('/bg/bg.gif')] bg-[center_bottom] md:bg-[center_175%] bg-repeat-x top-0 wk-hero",
+    "h-100vh h-[100svh] grid place-items-center text-secondary-foreground bg-theme bg-[center_bottom] md:bg-[center_175%] bg-repeat-x top-0 wk-hero",
   firstContainerClasses:
-    "h-fit md:min-h-screen md:h-fit grid place-items-center text-white md:px-[10%] pt-[5%] md:pt-[10%] bg-dark rounded-t-[7.5%] border-t border-white border-opacity-25 relative",
+    "h-fit md:min-h-screen md:h-fit grid place-items-center text-secondary-foreground md:px-[10%] pt-[5%] md:pt-[10%] bg-background rounded-t-[7.5%] border-t border-secondary-foreground border-opacity-25 relative",
   defaultClasses:
-    "h-fit md:min-h-[50vh] md:h-fit grid place-items-center text-white md:px-[10%] bg-dark relative",
+    "h-fit md:min-h-[50vh] md:h-fit grid place-items-center text-secondary-foreground md:px-[10%] bg-background relative",
 };
 ---
 

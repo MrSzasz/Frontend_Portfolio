@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  /* :root {
     --background: 0 0% 2%;
     --foreground: 0 0% 98%;
     --card: 0 0% 2%;
@@ -23,6 +23,73 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+  } */
+
+  :root {
+    /* --background: 0 0% 100%; */
+    --background: 39 32% 84%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 39 32% 84%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 39 32% 84%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 0 0% 2%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --custom-cursor: #070707;
+    --custom-bg: url("/main/hero/mainHeroBgLight.avif");
+  }
+
+  .dark {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 2%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 2%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --custom-cursor: #fefefe;
+    --custom-bg: url("/main/hero/mainHeroBg.avif");
   }
 }
 
@@ -58,10 +125,13 @@ html.lenis body {
 
 html {
   scroll-behavior: smooth;
+  cursor: none;
+  scrollbar-gutter: stable;
 }
+
 html::selection {
-  background: white;
-  color: #070707;
+  background: var(--secondary);
+  color: var(--secondary-foreground);
 }
 
 body {
@@ -90,7 +160,7 @@ h3 {
 
 @layer components {
   .important-span {
-    @apply bg-white text-black font-bold px-1;
+    @apply bg-secondary-foreground text-background font-bold px-1;
   }
 }
 
@@ -110,4 +180,17 @@ h3 {
   @media (max-width: 768px) {
     width: 1em;
   }
+}
+
+.cursor-dot {
+  position: fixed;
+  top: -10;
+  left: -10;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 100;
+  pointer-events: none;
+  width: 0.75em;
+  height: 0.75em;
+  background-color: var(--custom-cursor);
 }

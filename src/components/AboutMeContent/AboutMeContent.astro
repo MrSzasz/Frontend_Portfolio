@@ -23,7 +23,7 @@ import { DownloadIcon } from "@radix-ui/react-icons";
           src="/about/profile.webp"
           title="Profile picture"
           alt="Profile picture"
-          class="w-36 h-36 md:float-left mr-5 mb-4 md:mb-2 border-4 border-white mt-2"
+          class="w-36 h-36 md:float-left mr-5 mb-4 md:mb-2 border-4 border-foreground mt-2"
         />
         <p class="text-balance mb-4">
           Hello there! My name is <span class="important-span">Tomas</span>. I'm
@@ -62,12 +62,12 @@ import { DownloadIcon } from "@radix-ui/react-icons";
           > by
           <a
             href="#projects"
-            class="hover:bg-white hover:text-dark underline underline-offset-4 hover:no-underline transition-all"
-            >looking at my projects</a
+            class="hover:bg-foreground hover:text-background underline underline-offset-4 hover:no-underline transition-all cursor-none"
+            data-interactive>looking at my projects</a
           >, downloading my CV, or <a
             href="#contact"
-            class="hover:bg-white hover:text-dark underline underline-offset-4 hover:no-underline transition-all"
-            >contacting me!</a
+            class="hover:bg-foreground hover:text-background underline underline-offset-4 hover:no-underline transition-all cursor-none"
+            data-interactive>contacting me!</a
           >.
         </p>
 
@@ -76,7 +76,7 @@ import { DownloadIcon } from "@radix-ui/react-icons";
           <a
             href="https://tomas-lugo-dev-roadmap.vercel.app/"
             target="_blank"
-            class="hover:bg-white hover:text-dark underline underline-offset-4 hover:no-underline transition-all cursor-none"
+            class="hover:bg-foreground hover:text-background underline underline-offset-4 hover:no-underline transition-all cursor-none"
             data-interactive>Roadmap [ESP].</a
           >
         </p>

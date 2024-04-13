@@ -5,6 +5,7 @@ import "@fontsource/dm-mono";
 import "@fontsource/kanit";
 
 import "../styles/globals.css";
+import { ModeToggle } from "@/components/ToggleMode";
 ---
 
 <script is:inline>
@@ -161,6 +162,12 @@ import "../styles/globals.css";
     <title>TOMAS LUGO = PORTFOLIO</title>
   </head>
   <body class="cursor-none">
+    <div
+    class="fixed z-50 top-4 right-4 animate-fade-in-left animate-delay-1000"
+    data-interactive
+  >
+    <ModeToggle client:load />
+  </div>
     <slot />
     <CustomCursor />
   </body>

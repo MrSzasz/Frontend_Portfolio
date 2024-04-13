@@ -14,6 +14,7 @@ export default {
     extend: {
       backgroundImage: {
         'noise': "url('/bg/noise.svg')",
+        'theme': "var(--custom-bg)",
       },
       keyframes: {
         "accordion-down": {

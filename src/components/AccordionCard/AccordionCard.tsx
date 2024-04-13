@@ -23,19 +23,13 @@ const AccordionCard = ({ project }: AccordionCardProps): React.ReactElement => {
           href={project.url}
           target="_blank"
           rel="noreferrer"
-          className="md:row-end-1 hover:opacity-80 h-fit my-auto transition-all border border-transparent hover:border-white relative cursor-none"
+          className="md:row-end-1 hover:opacity-80 h-fit my-auto transition-all border border-transparent hover:border-foreground relative cursor-none"
           data-interactive
         >
           <div className="absolute inset-0 w-full h-full bg-black/15 hover:bg-black/50 md:bg-black/50 opacity-50 md:opacity-0 hover:opacity-100  flex flex-col gap-0 items-center justify-center transition-all">
-            <FiExternalLink className="text-white text-xl" />
-            <p className="text-white text-xl">Visit</p>
+            <FiExternalLink className="text-foreground text-xl" />
+            <p className="text-foreground text-xl">Visit</p>
           </div>
-          {/* <img
-            src={project.image}
-            loading="lazy"
-            alt={`${project.name} preview with link`}
-            className="aspect-video object-center object-cover"
-          /> */}
           <AccordionCardImage
             img={project.image}
             name={project.name}
@@ -44,12 +38,6 @@ const AccordionCard = ({ project }: AccordionCardProps): React.ReactElement => {
           />
         </a>
       ) : (
-        // <img
-        //   src={project.image}
-        //   loading="lazy"
-        //   alt={`${project.name} preview with link`}
-        //   className="aspect-video object-center object-cover row-end-1"
-        // />
         <AccordionCardImage
           img={project.image}
           name={project.name}
@@ -63,7 +51,7 @@ const AccordionCard = ({ project }: AccordionCardProps): React.ReactElement => {
           {project.stack.map((tech, i) => (
             <Badge
               key={i}
-              variant="secondary"
+              variant="accent"
               className="cursor-none rounded text-xs px-3 font-thin"
             >
               {tech}
@@ -74,8 +62,8 @@ const AccordionCard = ({ project }: AccordionCardProps): React.ReactElement => {
       {project.repo ? (
         <div className="md:row-start-1 md:row-end-2 w-fit" data-interactive>
           <Badge
-            className="rounded text-xs p-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground text-white px-3 py-1"
-            variant="default"
+            className="rounded text-xs p-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground text-foreground px-3 py-1"
+            variant="accent"
           >
             <a
               href={project.repo}
