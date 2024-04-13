@@ -16,7 +16,10 @@ const JobsDialog = ({ projects }: JobsDialogProps): React.ReactElement => {
           See all
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-[85vw] md:max-w-[70vw] h-[90vh] md:h-[85vh] overflow-y-auto">
+      <DialogContent
+        className="max-w-[85vw] md:max-w-[70vw] h-[90vh] md:h-[85vh] overflow-y-auto"
+        data-lenis-prevent
+      >
         <h2 className="text-5xl md:text-6xl">Work</h2>
         <div className="grid grid-cols-1  gap-4">
           {projects
