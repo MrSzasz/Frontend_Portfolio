@@ -196,6 +196,18 @@ export const projects: Project[] = [
   // ***********************************
 
   {
+    name: "Dev Roadmap [ESP]",
+    description:
+      "Dev notes I have written on my journey to become a full stack developer",
+    url: "https://tomas-lugo-dev-roadmap.vercel.app/",
+    image: "jobs/job19.webp",
+    stack: ["Astro", "Markdown", "Typescript", "Playwright"],
+    repo: "https://github.com/MrSzasz/frontend_dev-roadmap",
+    type: "personal",
+    main: true,
+    hash: "L3P${%IoIo?a~Tofoet6tT?aafIV",
+  },
+  {
     name: "JSON to TS Converter",
     description:
       "JSON to TS Converter is an extension that converts JSON files to TypeScript interfaces",
@@ -228,7 +240,6 @@ export const projects: Project[] = [
     stack: ["Astro", "React", "Tailwind", "Typescript", "Cypress"],
     repo: "https://github.com/MrSzasz/FrontEnd_NeatBG",
     type: "personal",
-    main: true,
     hash: "LD8rF~KS?1F|t1S]x]R%Epf1Wzw?",
   },
   {
