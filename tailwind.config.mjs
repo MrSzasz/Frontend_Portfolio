@@ -1,3 +1,5 @@
+import animations from '@midudev/tailwind-animations'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -92,5 +94,5 @@ export default {
       }
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animations, require("tailwindcss-animate")],
 }
