@@ -242,18 +242,18 @@ export const projects: Project[] = [
     type: "personal",
     hash: "LD8rF~KS?1F|t1S]x]R%Epf1Wzw?",
   },
-  {
-    name: "Klip Store",
-    description:
-      "A fictional E-commerce with Fake store API. Built with NextJS and Zustand",
-    url: "https://klip-store.vercel.app/",
-    image: "jobs/job18.webp",
-    stack: ["NextJS", "Zustand", "Tailwind", "Typescript"],
-    repo: "https://github.com/MrSzasz/frontend_klip-store",
-    type: "personal",
-    main: true,
-    hash: "LPKofA~XkB0Joeafazof009Yaf-;",
-  },
+  // {
+  //   name: "Klip Store",
+  //   description:
+  //     "A fictional E-commerce with Fake store API. Built with NextJS and Zustand",
+  //   url: "https://klip-store.vercel.app/",
+  //   image: "jobs/job18.webp",
+  //   stack: ["NextJS", "Zustand", "Tailwind", "Typescript"],
+  //   repo: "https://github.com/MrSzasz/frontend_klip-store",
+  //   type: "personal",
+  //   main: true,
+  //   hash: "LPKofA~XkB0Joeafazof009Yaf-;",
+  // },
   {
     name: "Moon Farm",
     description:
@@ -274,6 +274,7 @@ export const projects: Project[] = [
     stack: ["HTML", "CSS", "Bootstrap", "Sass", "Github"],
     repo: "https://github.com/MrSzasz/IDKHOWBandLugo",
     type: "personal",
+    main: true,
     hash: "LMEyPe4nRj?b00WBxuM{~Wxut7IU",
   },
   {
