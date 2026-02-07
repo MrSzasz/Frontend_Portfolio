@@ -96,6 +96,16 @@ export const projects: Project[] = [
   // ****************************** WORK
   // ***********************************
   {
+    name: "Tucán",
+    description: "E-Commerce & logistics solutions for your business",
+    url: "https://www.tucan.la/",
+    image: "jobs/job20.webp",
+    stack: ["React", "Java", "Redux", "MySQL", "Figma"],
+    type: "work",
+    main: true,
+    hash: "LCSY{ntU~WkW-?i[T0VsoFS7ROx]",
+  },
+  {
     name: "PedidosYa Pagos",
     description:
       "This is a demo page for a web that I developed working at PedidosYa",
@@ -138,17 +148,17 @@ export const projects: Project[] = [
     main: true,
     hash: "LjJ[I,_3_3-;4n%M%Mfk~qWBRjRj",
   },
-  {
-    name: "Mercedes Llanos Art",
-    description:
-      "Explore Mercedes Llanos's captivating, thought-provoking, and inspiring art",
-    url: "https://www.mercedesllanos.site/",
-    image: "jobs/job13.webp",
-    stack: ["NextJs", "Tailwind", "Firebase", "Figma"],
-    type: "work",
-    main: true,
-    hash: "LVOgKNS1%Ns;~qjuRjfkNFn+WAR*",
-  },
+  // {
+  //   name: "Mercedes Llanos Art",
+  //   description:
+  //     "Explore Mercedes Llanos's captivating, thought-provoking, and inspiring art",
+  //   url: "https://www.mercedesllanos.site/",
+  //   image: "jobs/job13.webp",
+  //   stack: ["NextJs", "Tailwind", "Firebase", "Figma"],
+  //   type: "work",
+  //   main: true,
+  //   hash: "LVOgKNS1%Ns;~qjuRjfkNFn+WAR*",
+  // },
   // {
   //   name: "Somos Salud",
   //   description:
@@ -191,6 +201,7 @@ export const projects: Project[] = [
   //   hash: "LQK^7$}+A0RO02NKxBS%9uT1xEs:",
   // },
 
+
   // ***********************************
   // ************************** PERSONAL
   // ***********************************
@@ -219,18 +230,18 @@ export const projects: Project[] = [
     main: true,
     hash: "L13[rQ?J9D4,-.%LR:IVw*xdotI+",
   },
-  {
-    name: "Job Vault",
-    description:
-      "Easily manage job applications and statuses while demonstrating front-end development skills",
-    url: "https://job-vault.vercel.app/",
-    image: "jobs/job2.webp",
-    stack: ["NextJs", "ShadCN", "Typescript", "SQLite", "Drizzle"],
-    repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
-    type: "personal",
-    main: true,
-    hash: "L21f0%Res@WSxfRyojWSs[RyoQa]",
-  },
+  // {
+  //   name: "Job Vault",
+  //   description:
+  //     "Easily manage job applications and statuses while demonstrating front-end development skills",
+  //   url: "https://job-vault.vercel.app/",
+  //   image: "jobs/job2.webp",
+  //   stack: ["NextJs", "ShadCN", "Typescript", "SQLite", "Drizzle"],
+  //   repo: "https://github.com/MrSzasz/FrontEnd_Job-vault/",
+  //   type: "personal",
+  //   main: true,
+  //   hash: "L21f0%Res@WSxfRyojWSs[RyoQa]",
+  // },
   {
     name: "NeatBG",
     description:

@@ -2,6 +2,8 @@
 import { Button } from "../ui/button";
 import TechnologiesCarousel from "../TechnologiesCarousel/TechnologiesCarousel.astro";
 import { DownloadIcon } from "@radix-ui/react-icons";
+
+const yearsOfExperience = new Date().getFullYear() - 2023;
 ---
 
 <div
@@ -27,16 +29,20 @@ import { DownloadIcon } from "@radix-ui/react-icons";
         />
         <p class="text-balance mb-4">
           Hello there! My name is <span class="important-span">Tomas</span>. I'm
-          a Full-Stack developer with focus on Front-End based in Argentina. my
+          a Software Engineer with focus on Front-End based in Argentina. my
           main stack is based on React (NextJs), NodeJs (Express), MySql and
           MongoDB for databases.
         </p>
 
         <p class="text-balance mb-4">
           With <span class="important-span"
-            >over 2 years of development experience</span
+            >over {yearsOfExperience} years of development experience</span
           >, I've learnt to create web applications with clear interfaces that
           highlight the main product.
+        </p>
+
+        <p class="text-balance mb-4">
+          Currently, I'm working as a Ssr Software Engineer at <span class="important-span">Tucán</span> in Argentina. I'm responsible for developing and maintaining the company's frontend with NextJs and connecting it to the backend with Java.
         </p>
 
         <p class="text-balance mb-4">
@@ -59,7 +65,7 @@ import { DownloadIcon } from "@radix-ui/react-icons";
           >.
         </p>
 
-        <p class="text-balance important-span w-fit">
+        <!-- <p class="text-balance important-span w-fit">
           PS.: You also can visit my
           <a
             href="https://tomas-lugo-dev-roadmap.vercel.app/"
@@ -67,7 +73,7 @@ import { DownloadIcon } from "@radix-ui/react-icons";
             class="hover:bg-foreground hover:text-background underline underline-offset-4 hover:no-underline transition-all cursor-none"
             data-interactive>Roadmap [ESP].</a
           >
-        </p>
+        </p> -->
       </div>
     </section>
     <TechnologiesCarousel />

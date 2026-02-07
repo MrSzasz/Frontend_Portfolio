@@ -3,30 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  /* :root {
-    --background: 0 0% 2%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 2%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 2%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-  } */
-
   :root {
-    /* --background: 0 0% 100%; */
     --background: 39 32% 84%;
     --foreground: 222.2 84% 4.9%;
 
@@ -56,7 +33,9 @@
     --ring: 222.2 84% 4.9%;
 
     --custom-cursor: #070707;
-    --custom-bg: url("/main/hero/mainHeroBgLight.avif");
+
+    --pattern-bg-color: #cec5b7;
+    --pattern-blend: color-burn;
   }
 
   .dark {
@@ -89,7 +68,9 @@
     --ring: 240 4.9% 83.9%;
 
     --custom-cursor: #fefefe;
-    --custom-bg: url("/main/hero/mainHeroBg.avif");
+
+    --pattern-bg-color: #040404;
+    --pattern-blend: color-dodge;
   }
 }
 
@@ -229,7 +210,6 @@ h3 {
   fill: white;
 }
 
-
 /* **************************************************************************** */
 /* ******************************** SLIDE FADE ******************************** */
 /* **************************************************************************** */
@@ -242,7 +222,7 @@ h3 {
     black 80%,
     transparent
   );
-  
+
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
@@ -250,4 +230,19 @@ h3 {
     black 80%,
     transparent
   );
+}
+
+/* **************************************************************************** */
+/* ****************************** PATTERN BG ********************************** */
+/* **************************************************************************** */
+
+.pattern-bg {
+  background-image: url("/bg/wild-sea-clean.png");
+  background-repeat: repeat;
+
+  /* light mode */
+  @apply bg-[#CEC5B7] bg-blend-color-burn;
+
+  /* dark mode */
+  @apply dark:bg-[#040404] dark:bg-blend-color-dodge;
 }
