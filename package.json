@@ -67,8 +67,5 @@
     "cypress": "^13.6.4",
     "eslint": "^8.56.0",
     "eslint-plugin-astro": "^0.31.4"
-  },
-  "engines": {
-    "node": "24.x"
   }
 }
