@@ -7,7 +7,7 @@ import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lugo-tomas-portfolio.vercel.app',
+  site: 'https://tomaslugodev.com/',
 
   integrations: [react(), tailwind({
     applyBaseStyles: false
