@@ -3,7 +3,9 @@ import { Button } from "../ui/button";
 import TechnologiesCarousel from "../TechnologiesCarousel/TechnologiesCarousel.astro";
 import { DownloadIcon } from "@radix-ui/react-icons";
 
-const yearsOfExperience = new Date().getFullYear() - 2023;
+const start = new Date(2022, 5, 1); // junio 2022 (mes 5 = junio)
+const now = new Date();
+const yearsOfExperience = now.getFullYear() - start.getFullYear() - (now < new Date(now.getFullYear(), 5, 1) ? 1 : 0);
 ---
 
 <div
@@ -29,7 +31,7 @@ const yearsOfExperience = new Date().getFullYear() - 2023;
         />
         <p class="text-balance mb-4">
           Hello there! My name is <span class="important-span">Tomas</span>. I'm
-          a Software Engineer with focus on Front-End based in Argentina. my
+          a Fullstack Software Engineer with focus on Front-End based in Argentina. my
           main stack is based on React (NextJs), NodeJs (Express), MySql and
           MongoDB for databases.
         </p>
